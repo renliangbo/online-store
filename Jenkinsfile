@@ -38,9 +38,9 @@ node {
         }
     }
 
-    stage('packaging') {
-        sh "./gradlew bootWar -x test -Pprod -PnodeInstall --no-daemon"
-        archiveArtifacts artifacts: '**/build/libs/*.war', fingerprint: true
-    }
+    // stage('packaging') {
+    //     sh "./gradlew bootWar -x test -Pprod -PnodeInstall --no-daemon"
+    //     archiveArtifacts artifacts: '**/build/libs/*.war', fingerprint: true
+    // }
 
 }
