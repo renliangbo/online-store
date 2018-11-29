@@ -112,7 +112,6 @@ public class Product implements Serializable {
         return this;
     }
 
-
     public void setSize(Size size) {
         this.size = size;
     }
